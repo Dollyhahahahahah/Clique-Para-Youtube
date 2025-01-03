@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado Preto e Branco</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            position: relative; /* Para permitir o posicionamento absoluto do crédito */
+        }
+        #quadrado {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            border: 2px solid white;
+        }
+        #creditos {
+            position: absolute; /* Posiciona o texto de crédito */
+            bottom: 10px; /* Distância do fundo */
+            right: 10px; /* Distância da direita */
+            font-size: 12px; /* Tamanho da fonte */
+            color: gray; /* Cor do texto */
+        }
+        #logo {
+            position: absolute; /* Posiciona a imagem do número nove */
+            top: 10px; /* Distância do topo */
+            left: 10px; /* Distância da esquerda */
+            width: 100px; /* Largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        #logo2 {
+            position: absolute; /* Posiciona a nova imagem */
+            top: 10px; /* Distância do topo */
+            right: 10px; /* Distância da direita */
+            width: 100px; /* Largura da nova imagem */
+            height: auto; /* Mantém a proporção da nova imagem */
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="https://cdn.dicionariopopular.com/imagens/numero-nove.gif" alt="Número Nove">
+    <img id="logo2" src="https://i.pinimg.com/1200x/a8/83/60/a8836054aa31b14cb39ab1c7875980c5.jpg" alt="Nova Imagem">
+    <div id="quadrado" onclick="abrirYoutube()">
+        Clique aqui
+    </div>
+    <div id="creditos">
+        feito por yanBw
+    </div>
+
+    <script>
+        function abrirYoutube() {
+            window.location.href = "https://www.youtube.com";
+        }
+    </script>
+</body>
+</html>
